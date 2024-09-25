@@ -13,6 +13,7 @@ def initialize_database():
     for attempt in range(max_retries):
         try:
             with app.app_context():
+                db.session.rollback()
                 db.drop_all()
                 db.create_all()
             print("Database initialized successfully.")

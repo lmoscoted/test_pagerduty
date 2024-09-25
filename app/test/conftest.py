@@ -25,7 +25,7 @@ def client(app):
     return app.test_client()
 
 
-@pytest.fixture(scope="session") # To avoid test contamination
+@pytest.fixture(scope="function") # To avoid test contamination
 def session(app):
     with app.app_context():
         db.engine.echo = True

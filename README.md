@@ -98,10 +98,13 @@ For the API documentation you can access to:
 http://localhost/apidocs
 
 ## Testing
-For running all the tests you need to run:
-
+For testing you should stop the running containers, if any, and start the application:
 ```bash
-docker-compose exec app bash -c "python init_db.py && python -m pytest"
+docker-compose stop
+```
+Then start again the containers
+```bash
+docker-compose up  or  docker-compose up --build
 ```
 
 For running the unit tests:
@@ -113,11 +116,11 @@ For running the integration tests:
 ```bash
 docker-compose exec app bash -c "python init_db.py && python -m pytest test/integration"
 ```
- docker-compose up --build --force-recreate
 
 
 ## Additional Notes
-Sometimes could be needed recreate completely the containers:
+* The data in the database is not being persisted.
+* Sometimes could be needed recreate completely the containers:
 ```bash
  docker-compose up --build --force-recreate
 ```
