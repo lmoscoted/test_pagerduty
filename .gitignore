@@ -46,7 +46,3 @@ commands.txt
 extract_load/
 migrations/
 no-git/
-
-
-$ git config --global user.name "Luis Moscote"
-$ git config --global user.email ing.luis.moscote@gmail.com
