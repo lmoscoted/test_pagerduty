@@ -1,0 +1,52 @@
+# Ignore.env file
+.env
+
+# Ignore Docker containers and images
+.dockerignore
+docker-compose.override.yml
+docker-compose.dev.yml
+
+# Ignore Python byte code and cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment directory
+venv/
+pd_dashboard/
+
+# Ignore MySQL database files
+db-data/
+mysql-data/
+
+# Ignore logs and error files
+logs/
+errors.log
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore other files
+ coverage/
+.mypy_cache/
+.pytest_cache/
+requirements.txt.backup
+test-requirements.txt
+requirements-dev.txt
+tox.ini
+commands.txt
+extract_load/
+migrations/
+no-git/
+
+
+$ git config --global user.name "Luis Moscote"
+$ git config --global user.email ing.luis.moscote@gmail.com
