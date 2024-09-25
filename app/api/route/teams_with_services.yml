@@ -1,0 +1,20 @@
+summary: Get teams with services
+description: Returns a JSON object containing the number of teams and their related services
+consumes:
+  - application/json
+produces:
+  - application/json
+responses:
+  200:
+    description: JSON object containing the number of teams and their related services
+    schema:
+      type: array
+      items:
+        type: object
+        properties:
+          team:
+            type: string
+          services:
+            type: array
+            items:
+              type: string

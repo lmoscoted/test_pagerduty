@@ -1,0 +1,12 @@
+summary: Get teams with services as CSV
+description: Returns a CSV file containing the number of teams and their related services
+consumes:
+  - application/json
+produces:
+  - text/csv
+responses:
+  200:
+    description: CSV file containing the number of teams and their related services
+    schema:
+      type: string
+      format: csv

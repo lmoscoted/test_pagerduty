@@ -1,0 +1,12 @@
+summary: Get service count as CSV
+description: Returns a CSV file containing the number of existing services
+consumes:
+  - application/json
+produces:
+  - text/csv
+responses:
+  200:
+    description: CSV file containing the number of existing services
+    schema:
+      type: string
+      format: csv

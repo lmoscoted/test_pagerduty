@@ -1,0 +1,14 @@
+summary: Get service count
+description: Returns a JSON object containing the number of existing services
+consumes:
+  - application/json
+produces:
+  - application/json
+responses:
+  200:
+    description: JSON object containing the number of existing services
+    schema:
+      type: object
+      properties:
+        count:
+          type: integer

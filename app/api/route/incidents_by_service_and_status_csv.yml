@@ -1,0 +1,12 @@
+summary: Get incidents by service and status as CSV
+description: Returns a CSV file containing the number of incidents by service and status
+consumes:
+  - application/json
+produces:
+  - text/csv
+responses:
+  200:
+    description: CSV file containing the number of incidents by service and status
+    schema:
+      type: string
+      format: csv

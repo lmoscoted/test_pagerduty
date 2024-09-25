@@ -1,0 +1,18 @@
+summary: Get incidents by service and status
+description: Returns a JSON object containing the number of incidents by service and status
+consumes:
+  - application/json
+produces:
+  - application/json
+responses:
+  200:
+    description: JSON object containing the number of incidents by service and status
+    schema:
+      type: object
+      properties:
+        service_id:
+          type: string
+        status:
+          type: string
+        count:
+          type: integer

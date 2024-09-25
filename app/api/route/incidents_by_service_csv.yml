@@ -1,0 +1,12 @@
+summary: Get incidents by service as CSV
+description: Returns a CSV file containing the number of incidents per service
+consumes:
+  - application/json
+produces:
+  - text/csv
+responses:
+  200:
+    description: CSV file containing the number of incidents per service
+    schema:
+      type: string
+      format: csv

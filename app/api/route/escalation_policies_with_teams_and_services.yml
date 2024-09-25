@@ -1,0 +1,24 @@
+summary: Get escalation policies with teams and services
+description: Returns a JSON object containing the escalation policies with teams and services
+consumes:
+  - application/json
+produces:
+  - application/json
+responses:
+  200:
+    description: JSON object containing the escalation policies with teams and services
+    schema:
+      type: array
+      items:
+        type: object
+        properties:
+          escalation_policy:
+            type: string
+          teams:
+            type: array
+            items:
+              type: string
+          services:
+            type: array
+            items:
+              type: string

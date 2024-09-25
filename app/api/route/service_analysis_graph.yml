@@ -1,0 +1,9 @@
+summary: Get service analysis graph
+description: Returns a HTML page containing the analysis of which Service has more Incidents and breakdown of Incidents by status
+consumes:
+  - application/json
+produces:
+  - text/html
+responses:
+  200:
+    description: HTML page containing the analysis of which Service has more Incidents and breakdown of Incidents by status

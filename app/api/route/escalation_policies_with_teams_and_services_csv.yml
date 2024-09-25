@@ -1,0 +1,12 @@
+summary: Get escalation policies with teams and services as CSV
+description: Returns a CSV file containing the escalation policies with teams and services
+consumes:
+  - application/json
+produces:
+  - text/csv
+responses:
+  200:
+    description: CSV file containing the escalation policies with teams and services
+    schema:
+      type: string
+      format: csv
